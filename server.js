@@ -1,5 +1,3 @@
-# Recriar o arquivo após reset de ambiente
-server_js_teste = """
 const express = require('express');
 const axios = require('axios');
 const app = express();
@@ -7,8 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.post('/enviar-evento', async (req, res) => {
-  // clickid fixo para teste com o Kwai
-  const clickid = "20HrowHH1_OU3SAtOFIJRA";
+  const clickid = "20HrowHH1_OU3SAtOFIJRA"; // clickid fixo para teste no Kwai
 
   const evento = {
     access_token: "v1YASo71sN6dJS52cdO2ZTHn8xGRXUlCZlNrd5iHrK4",
@@ -46,10 +43,3 @@ app.post('/enviar-evento', async (req, res) => {
 app.listen(3000, () => {
   console.log('Servidor rodando na porta 3000');
 });
-"""
-
-path = "/mnt/data/server_teste.js"
-with open(path, "w") as f:
-    f.write(server_js_teste.strip())
-
-path
