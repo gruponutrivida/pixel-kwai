@@ -9,7 +9,7 @@ app.post('/enviar-evento', async (req, res) => {
 
   const evento = {
     access_token: "v1YASo71sN6dJS52cdO2ZTHn8xGRXUlCZlNrd5iHrK4",
-    clickid: clickid || "click-teste",
+    clickid: clickid || "20HrowHH1_OU3SAtOFIJRA",
     event_name: "EVENT_ADD_TO_CART",
     is_attributed: 1,
     mmpcode: "PL",
